@@ -1,0 +1,24 @@
+import { Document, Schema, model } from '@ioc:Adonis/Addons/Mongoose'
+
+export interface {{ filename }}Interface extends Document {
+  fieldname: string
+  dateCreated: Date
+  dateUpdated: Date
+}
+
+const schema = new Schema<{{ filename }}Interface>(
+  {
+    fieldname: {
+      type: String,
+      required: true
+    }
+  },
+  {
+    timestamps: {
+      createdAt: 'dateCreated',
+      updatedAt: 'dateUpdated'
+    }
+  }
+)
+
+export default model<{{ filename }}Interface>('{{ filename }}', schema)
