@@ -10,14 +10,14 @@ const schema = new Schema<{{ filename }}Interface>(
   {
     fieldname: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   {
     timestamps: {
       createdAt: 'dateCreated',
-      updatedAt: 'dateUpdated'
-    }
+      updatedAt: 'dateUpdated',
+    },
   }
 )
 
