@@ -1,4 +1,4 @@
-import { Document, Schema, model } from '@ioc:Adonis/Addons/Mongoose'
+import { Document, Schema, model } from '@ioc:Mongoose'
 
 export interface {{ filename }}Interface extends Document {
   fieldname: string
