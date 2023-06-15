@@ -3,25 +3,25 @@
 ## Install dependency
 
 ```bash
-# npm install @dedel.alex/adonis5-mongoose
+npm i @dedel.alex/adonis5-mongoose
 ```
 
 ## RUN COMMAND
 
 ```bash
-# node ace configure @dedel.alex/adonis5-mongoose
+node ace configure @dedel.alex/adonis5-mongoose
 ```
 
 ## Generate model
 
 ```bash
-# node ace mongoose:model User
+node ace mongoose:model Test
 ```
 
-### ADD FOLLOWING VARIABLE TO .env
+### Configure MongoDb
 
 ```ts
-MONGODB_URI=mongodb://127.0.0.1:27017/database_name
+MONGODB_URI=mongodb://127.0.0.1:27017/mydb
 ```
 
 # Github project
