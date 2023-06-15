@@ -1,4 +1,3 @@
-import Env from "@ioc:Adonis/Core/Env";
 import Logger from "@ioc:Adonis/Core/Logger";
 import { ApplicationContract } from "@ioc:Adonis/Core/Application";
 import { Mongoose } from "mongoose";
@@ -13,7 +12,7 @@ import { Mongoose } from "mongoose";
 | You must import them inside the life-cycle methods defined inside
 | the provider class.
 */
-export default class MongoProvider {
+export default class MongooseProvider {
   constructor(protected app: ApplicationContract) {}
 
   public register() {
@@ -21,6 +20,7 @@ export default class MongoProvider {
 
     mongoose.set("strictQuery", false);
 
+    const Env = this.app.container.resolveBinding("Adonis/Core/Env");
     const mongoUri = Env.get("MONGODB_URI") || "mongodb://127.0.0.1:27017/mydb";
     Logger.info("Connecting to MongoDb...");
     mongoose
