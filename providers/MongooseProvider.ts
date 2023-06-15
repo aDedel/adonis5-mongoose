@@ -1,4 +1,3 @@
-import Logger from "@ioc:Adonis/Core/Logger";
 import { ApplicationContract } from "@ioc:Adonis/Core/Application";
 import { Mongoose } from "mongoose";
 
@@ -21,7 +20,9 @@ export default class MongooseProvider {
     mongoose.set("strictQuery", false);
 
     const Env = this.app.container.resolveBinding("Adonis/Core/Env");
+    const Logger = this.app.container.resolveBinding("Adonis/Core/Logger");
     const mongoUri = Env.get("MONGODB_URI") || "mongodb://127.0.0.1:27017/mydb";
+
     Logger.info("Connecting to MongoDb...");
     mongoose
       .connect(mongoUri, {})
