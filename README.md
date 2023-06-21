@@ -20,8 +20,15 @@ node ace mongoose:model Test
 
 ### Configure MongoDb
 
-```ts
+```bash
+# MongoDb URI
 MONGODB_URI=mongodb://127.0.0.1:27017/mydb
+
+# Mongoose connection options
+MONGODB_OPTIONS="{}"
+
+# Use mongoose default connection?
+MONGODB_CREATE_NEW_CONNECT=false
 ```
 
 # Github project

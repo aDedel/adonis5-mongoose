@@ -65,7 +65,9 @@
       "@dedel.alex/adonis5-mongoose/build/commands"
     ],
     "env": {
-      "MONGODB_URI": "mongodb://127.0.0.1:27017/mydb"
+      "MONGODB_URI": "mongodb://127.0.0.1:27017/mydb",
+      "MONGODB_CREATE_NEW_CONNECT": false,
+      "MONGODB_OPTIONS": ""
     },
     "types": "@dedel.alex/adonis5-mongoose",
     "providers": [

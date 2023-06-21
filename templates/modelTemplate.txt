@@ -1,4 +1,4 @@
-import { Document, Schema, model } from '@ioc:Mongoose'
+import { Document, Schema, connection } from '@ioc:Adonis/Addons/Mongoose'
 
 export interface {{ filename }}Interface extends Document {
   fieldname: string
@@ -21,4 +21,4 @@ const schema = new Schema<{{ filename }}Interface>(
   }
 )
 
-export default model<{{ filename }}Interface>('{{ filename }}', schema)
+export default connection.model<{{ filename }}Interface>('{{ filename }}', schema)
