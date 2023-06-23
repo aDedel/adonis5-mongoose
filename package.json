@@ -76,11 +76,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aDedel/adonis-mongoose.git"
+    "url": "git+https://github.com/aDedel/adonis5-mongoose.git"
   },
   "bugs": {
-    "url": "https://github.com/aDedel/adonis-mongoose/issues"
+    "url": "https://github.com/aDedel/adonis5-mongoose/issues"
   },
-  "homepage": "https://github.com/aDedel/adonis-mongoose#readme",
+  "homepage": "https://github.com/aDedel/adonis5-mongoose#readme",
   "types": "./build/providers/MongooseProvider.d.ts"
 }

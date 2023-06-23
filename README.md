@@ -33,4 +33,4 @@ MONGODB_CREATE_NEW_CONNECT=false
 
 # Github project
 
-https://github.com/aDedel/adonis-mongoose
+https://github.com/aDedel/adonis5-mongoose
