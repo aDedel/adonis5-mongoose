@@ -30,25 +30,18 @@ export default class MongooseProvider {
   }
 
   public async boot() {
-    // Connect to MongoDb
-    const Logger = this.app.container.resolveBinding("Adonis/Core/Logger");
-    Logger.info("Connecting to MongoDb...");
-
-    const conn: Connection = this.app.container.use(
-      "Adonis/Addons/Mongoose"
-    ).connection;
-    await conn
-      .asPromise()
-      .then(() => {
-        Logger.info("MongoDb Connection: OK");
-      })
-      .catch((err) => {
-        Logger.error(err, "MongoDb Error");
-      });
+    // App is booting
   }
 
   public async ready() {
     // App is ready
+    // Connect to MongoDb
+    const conn: Connection = this.app.container.use(
+      "Adonis/Addons/Mongoose"
+    ).connection;
+    await conn.asPromise().catch((err) => {
+      this.app.logger.error(`MongoDb Error: ${err}`);
+    });
   }
 
   public async shutdown() {
