@@ -37,7 +37,7 @@ export default class MongooseProvider {
     // App is ready
     // Connect to MongoDb
     const conn: Connection = this.app.container.use(
-      "Adonis/Addons/Mongoose"
+      "Adonis/Addons/Mongoose",
     ).connection;
     await conn.asPromise().catch((err) => {
       this.app.logger.error(`MongoDb Error: ${err}`);

@@ -34,7 +34,7 @@ export default class MakeTask extends BaseCommand {
       await this.generator.run();
     } catch (e) {
       this.logger.error(
-        "Error: cannot to generate collection class with error " + e.message
+        "Error: cannot to generate collection class with error " + e.message,
       );
     }
   }
