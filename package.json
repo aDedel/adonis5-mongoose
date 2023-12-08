@@ -1,6 +1,6 @@
 {
   "name": "@dedel.alex/adonis5-mongoose",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Mongoose Provider for AdonisJS",
   "main": "build/providers/MongooseProvider.js",
   "author": "dedel.alex",
