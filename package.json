@@ -1,6 +1,6 @@
 {
   "name": "@dedel.alex/adonis5-mongoose",
-  "version": "8.5.0",
+  "version": "8.5.1",
   "description": "Mongoose Provider for AdonisJS",
   "main": "build/providers/MongooseProvider.js",
   "author": "dedel.alex",
@@ -30,7 +30,7 @@
     "mongodb"
   ],
   "dependencies": {
-    "mongoose": "^8.5.0"
+    "mongoose": "^8.5.1"
   },
   "devDependencies": {
     "@adonisjs/ace": "^11.3.1",
