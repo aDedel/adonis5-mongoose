@@ -30,16 +30,16 @@
     "mongodb"
   ],
   "dependencies": {
-    "mongoose": "^8.7.2"
+    "mongoose": "8.7.2"
   },
   "devDependencies": {
     "@adonisjs/ace": "^11.3.1",
     "@adonisjs/core": "^5.9.0",
     "@adonisjs/mrm-preset": "^5.0.3",
     "@adonisjs/require-ts": "^2.0.13",
-    "@types/node": "^22.7.9",
-    "@typescript-eslint/eslint-plugin": "^8.11.0",
-    "@typescript-eslint/parser": "^8.11.0",
+    "@types/node": "^22.8.4",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
     "copyfiles": "^2.4.1",
     "del-cli": "^6.0.0",
     "eslint": "^8.57.1",
